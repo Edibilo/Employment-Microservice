@@ -9,16 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="config-server" />
-        <module name="employee" />
         <module name="service-registry" />
       </profile>
-      <profile name="Annotation profile for department" enabled="true">
+      <profile name="Annotation profile for employee" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="employee" />
         <module name="department" />
       </profile>
     </annotationProcessing>
